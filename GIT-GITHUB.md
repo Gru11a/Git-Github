@@ -1,38 +1,41 @@
 
 
-# 📋Nota:
+# 📋Note:
 	
-	El propósito es investigar mas de esta herramienta es aprender y utilizar en mis proyectos personales y profesionales. Las notas que realice son apuntes que considero importantes y que me pueden ayudar en futuras referencias.
+	The purpose of further researching this tool is to learn and apply it in my personal and professional projects. The notes I’ve taken are key points I consider important and useful for future reference.
 
 # 🔗Referencias:
 
-	He tomado de referencia el canal de MoureDev, por que explica claro y tiene gran experiencia en el campo de desarrollo, pueden seguirlo si gustan:
+	I’ve used the MoureDev YouTube channel as a reference because of its clear explanations and solid experience in software development. Feel free to follow the channel:
+	
 	https://youtu.be/3GymExBkKjE?si=DMHTAkJNLqJ44Ued
 	
-
-# 👉Comentarios Personales:
-
-	https://github.com/Gru11a/git-github/blob/main/GIT-GitHUB/git-github.png
 
 ## What is GIT - GITHUB
 
 
 ### GIT
 
-	- Control de versiones
-	- Código abierto 
-	- Distribuido
+	- Version control
+    
+	- Open source
+    
+	- Distributed
 
 ### GITHUB
 
-	- Plataforma de alogamiento de codigo
+	Code hosting platform
 
 ## Resources:
 
 	https://git-scm.com/
+	
 	https://git-scm.com/book/en/v2
+	
 	https://github.com/
+	
 	https://training.github.com/downloads/github-git-cheat-sheet/
+	
 	https://docs.github.com/en
 
 ## Context:	
@@ -57,27 +60,26 @@
 ## Comands 
 
 	ls
-		listado de todos los directorios
+		list all directories 
 	
 	cd
-		para moverse a otra carpeta
+		move to another folder
 	
 	cd ..
-		para retroceder de ubicacion
+		go back to previous folder
 	
 	pwd
-		para ver donde me encuentro
+		show current location
 	
 	mkdir "nombre"
-		crea una carpeta
+		create a new folder
 	
 	code.
-		para abrir el visual studio code
+		open Visual Studio Code
 
 ## Configuracion de GIT
 
-	asociado a alguien
-		nombre de usuario y email
+	Associate user name and email:
 		
 	git config --global user.name "nombre"
 	git config --global user.mail "grulla@mail.com"
@@ -86,48 +88,47 @@
 	
 	touch prog.py
 	git init
-		para que en la carpeta que se indique inicie a funcionar git
+		initialize Git in the current folder
 
-	Http://ohmyz.sh
-		para personalizar la terminal
+	Customize terminal: [Oh My Zsh](http://ohmyz.sh)
 
-## Ramas en GIT
+## Git Branches
 
 	git branch -m main
-		para cambiar el nombre de la rama principal
+		rename the main branch
 
 ## Git ADD y COMMIT
 
 	git status
-		para ver el estado del proyecto
+		check project status
 		
 	git add hellogit.py
-		para agragar el archivo para se treceable por git
+		track file with git 
 		
 	git commit -m "Commit sobre..."
-		para ingresar un comentacio de una vez
+		commit with message
 		
 ## GIT LOG y STATUS
 
 	git log
-		para ve si se ha creado la imagen y observar la trasabilidad
+		check commit history 
 
 ## GIT CHECKOUT Y RESET
 
 	git checkout hellogit2.py
-		para ubicarnos a un momento exacto
+		return to specific file version
 	
 	git reset
-		para volver el estado de la ultima fotografia
+		reset to last snapshot
 	
 	git log --graph
-		para verlo como rama
+		visual branch graph
 	
 	git log --graph --pretty=oneline 
-		para ver el movimiento en una linea
+		one line
 	
 	git log -- grapgh --decorate --all --oneline
-		para ver mas claro el moviento o actualizacion.
+		decorate
 
 ## GIT ALIAS
 
@@ -137,133 +138,125 @@
 ## GITGNORE
 
 	touch .gitignore
-		para crear una carpera para incluir carpetas que no debe tomar en cuenta para el proyecto.
-	En el archivo creado "gitignore" ingresamos los nombre de archivos a ignorar
-		
-		**/.nombre
-			con los asteriscos le indicamos donde sea
+	
+		**/.name
+			Add ignored files or folders:
 
 ## GIT DIFF
 
 	git diff
-		para ver lo que ha cambiado
+		see changes made
 
 ## Checkout
 
-	Para desplazarse por los diferentes estados
+	To move through the different states
 
 	git checkout "hash"
-		para ubicarse en se estado con el hash
+		to locate yourself in that state with the hash
 	git checkout "PROYECTO.PY"	
 		
 	git checkout HEAD
-		para indiar que estado se desea trabajar
+		to indicate which state you want to work in
 
 ## GIT RESET HARD Y REFLOG
 
 	git reset --hard
-		descartar cambios, pero con hard es mas 
+		discard changes, but with hard it is more
 	git reflog
-		historial completo de interacciones
+		complete interaction history
 
 ## GIT TAG
 
-	Para etiquetar referencias importantes
+	To tag important references
 	
 	git tag project_1
-		como colocar un nombre a ese punto
+		how to name that point
 		
 	git add .
-		agrega todo lo pendiente
+		add everything pending
 	
 	git tag
-		para ver listado de tags
+		to see list of tags
 	
-	git checkout tags/nombredeltag
-		para moverse con tags
+	git checkout tags/tag
+		to move with tags
 	
 	git checkout main
 
 ## GIT Branch y Switch
 
 	git branch nombre
-		para crear una rama
+		to create a branch
 
 	git switch nombre
-		para moverse a la rama que se desea trabajar
+		to move to the branch you want to work on
 
 ## Git Merge
 
-	Para combinar los cambios
+	To combine the changes
 	git merge main
-		combinar los datos a nuestra rama
+		merge the data into our branch
 
-## Conflictos en GIT
+## Conflicts en GIT
 
-	cuando varios equipos modifican el misco codigo 
-
-	en el editor de codigo se observa lo que ha sido modificado y se deja lo que corresponda	
+	When several teams modify the same code in the code editor, what has been modified is observed and what corresponds is left.
 
 ## GIT STASH
 
-	para almacenar temporalmente, algo en que se esta trabajando
+	Temporarily store uncommitted work:
 	
 	git stash
-		para guardarlo temporalmente
+		save work  
 		
 	git stash list
-		para enlistar los stash
+		list stashed changes
 		
 	git stash pop
-		para recuperar o volver donde se guardo
+		apply lates stash
 		
 	git stash drop
-		para borrar los stash guardados	
+		delete a stash
 
-## Reintegración en GIT
+## Git Reintegration
 
-Cuando se ha terminado alguna funcionalidad en alguna rama, y se desea integras a la rama main.
+When a feature is completed and needs to be merged into the main branch:
 
-1-revisar si hay conflictos y comparar ramas
+1-Check for differences and conflicts:
 	git diff rama1
 
-2-combinar con el proyecto principal
+2-Merge
 	git merge rama1
 
-3-verificamos el estado
+3-Check status
 	git status
 	
 
-## Eliminación de ramas
+## Delete Branches
 
-	git branch -d login
-		para eliminar la rama 
+	git branch -d branch_name
+		
+## Introduction to GitHUb
 
-
-## Introducción a GitHUb
-
-## Page:
+## Website:
 
 	https://github.com/
 
 
-## Github primeros pasos
+## Getting started
 
-	[GitHub Docs](https://docs.github.com/es)
-
-## Repositorio personal
-
-	Creacion de cuenta y conocer la plataforma
+	https://docs.github.com/es
 	
-## Local y remoto
-
-	Para sincronizar nuestros proyectos con Github
+### Create account and explore platform.
 	
-## Autenticación SSH
+## Local y remote
 
-	[Authentication documentation - GitHub Docs](https://docs.github.com/en/authentication)
+	Sync local projects with GitHub.
+	
+## SSH Authentication
 
-He utilizado windows:
+	https://docs.github.com/en/authentication
+
+For windows:
 
 [Generating a new SSH key and adding it to the ssh-agent - GitHub Docs](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
@@ -272,9 +265,9 @@ Get-Service -Name ssh-agent | Set-Service -StartupType Manual
 Start-Service ssh-agent
 ```
 
-## Repositorio proyecto
+## Create a Project Repository
 
-Se crea un nuevo repositorio
+New repository creation.
 
 ## Git Remote
 
@@ -282,66 +275,65 @@ Se crea un nuevo repositorio
 
 	git push -u origin main
 
-## Subida Proyecto
+## Push Project
 
 ## Git Fetch y Pull
 
 ### fetch
 
-	Solo descarga el histotial de cambios sin los cambios
+	download history only  
 
 ### git pull 
 
-	descargar el historial y los cambios
+	download history and changes
 		
 
 ## Git Clone
 
 	git clone git@github.com:Gru11a/git-github1.git
-		para descargar el proyecto en el equipo
+		clone project locally
 	
 ## Git Push
 
-	para subir los commits o cambios a github
+	upload changes to GitHub
 
 ## GitHub fork
 
-	para copiar otro proyecto en nuestro repositorio 
+	Copy someone else’s project to your own repository.
 
-## Flujo Colaborativo
+## ## Collaborative Flow
 
-	Cuando trabajamos en el proyecto compiado de un fork, y luego enviar los cambio al proyecto original
+	Work on a forked project and contribute back to the original.
 
-	Importante para verifivar sincronicaion Sync fork
+	Remember to **Sync fork** to verify synchronization.
 
 ## Pull Request
 
-	Para contribuir con el proyecto original
+To contribute to the original repository:
 
- 1-Se preciona en contribute se envia la pull request.
+1. Click **Contribute** and send a pull request.
+    
+2. The original project owner will review and accept/reject it.
+    
+3. Once accepted, apply changes with **Merge pull request**.
 
-2- En el proyecto original sale una solicitud de pull request, se revisa si de aceptan.
-
-3- Luego de aceptados para mostrar los cambios se debe Merge pull request.
-
-
-## Herramientas graficas
+## Graphical tools
 
 ### Gitkracken
 	
-	para proyectos libres
+	Great for open-source projects.
 	
 ### Sourcetree
 	
-	para proyectos privados
+	Ideal for private repositories.
 
 ### Git-fork
 
-	otra herramienta
+	Another alternative GUI.
 
 ## Git & GitHub Flow
 
-Flows de trabajo
+Workflows
 
 https://www.gitkraken.com/learn/git/git-flow
 https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow
@@ -350,7 +342,7 @@ https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow
 
 ### Cherry Pick
 	
-	La posibilidad de ir a un commit concreto, y traerlo a la rama que deseamos
+	Bring a specific commit into the current branch:
 
 	git cherry-pick hash
 	git cherry-pick --i
@@ -358,7 +350,7 @@ https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow
 	git cherry-pick --abort
 ### Rebase
 
-	Para traer una rama a un punto concreto y modifica el historial de los commits
+	Apply a branch to a specific point, rewriting commit history:
 
 	git rebase 	--i
 	git rebase 	--continue
@@ -366,10 +358,10 @@ https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow
 
 ## GitHub Pages & Actions
 
-Para paginas en github
+To publish websites:
 	https://pages.github.com/
 
-Para automatizacion
+For automation workflows:
 	https://github.com/features/actions
 
 		
